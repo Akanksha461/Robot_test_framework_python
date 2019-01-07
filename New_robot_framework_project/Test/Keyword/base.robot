@@ -9,6 +9,7 @@ Variables           ../Locators/locators.py
 
 Open facebook website in Chrome and maximize the window
     Open Browser  url=${URL}  browser=chrome
+    Set Screenshot Directory  ${screenshot_path}
     Maximize Browser Window
     #Log  Browser is Maximized
     Log to console  Browser is Maximized

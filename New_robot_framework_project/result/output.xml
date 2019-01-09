@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.5.2 on linux)" rpa="false" generated="20190108 22:59:45.790">
+<suite name="My First Robot Script" id="s1" source="/home/akanksha/PycharmProjects/New_robot_framework_project/Test/Testcases/my_first_robot_script.robot">
+<test name="TestCase1:Verfiy_home_page_title" id="s1-t1">
+<kw name="Open facebook website in Chrome and maximize the window" library="base">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20190108 22:59:46.077" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20190108 22:59:46.076" endtime="20190108 22:59:55.858"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190108 22:59:55.860" endtime="20190108 22:59:55.992"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${screenshot_path}</arg>
+</arguments>
+<status status="PASS" starttime="20190108 22:59:55.993" endtime="20190108 22:59:55.994"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20190108 22:59:55.994" endtime="20190108 22:59:55.995"></status>
+</kw>
+<status status="PASS" starttime="20190108 22:59:46.076" endtime="20190108 22:59:55.996"></status>
+</kw>
+<kw name="Verify the Home page title" library="base">
+<kw name="Get Title" library="Selenium2Library">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${WindowTitle}</var>
+</assign>
+<msg timestamp="20190108 22:59:56.022" level="INFO">${WindowTitle} = Facebook – log in or sign up</msg>
+<status status="PASS" starttime="20190108 22:59:55.998" endtime="20190108 22:59:56.022"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${WindowTitle}</arg>
+<arg>${title}</arg>
+</arguments>
+<status status="PASS" starttime="20190108 22:59:56.023" endtime="20190108 22:59:56.024"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Navigated to :${WindowTitle}</arg>
+</arguments>
+<status status="PASS" starttime="20190108 22:59:56.024" endtime="20190108 22:59:56.025"></status>
+</kw>
+<status status="PASS" starttime="20190108 22:59:55.997" endtime="20190108 22:59:56.027"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190108 22:59:56.027" endtime="20190108 22:59:56.099"></status>
+</kw>
+<doc>This this is to verify the homepage title</doc>
+<tags>
+<tag>Regression</tag>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" critical="yes" starttime="20190108 22:59:46.074" endtime="20190108 22:59:56.100"></status>
+</test>
+<test name="TestCase2:Login_with_invalid_credentials" id="s1-t2">
+<kw name="Open facebook website in Chrome and maximize the window" library="base">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20190108 22:59:56.105" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20190108 22:59:56.105" endtime="20190108 23:00:07.057"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190108 23:00:07.058" endtime="20190108 23:00:07.165"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${screenshot_path}</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:07.166" endtime="20190108 23:00:07.166"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:07.167" endtime="20190108 23:00:07.167"></status>
+</kw>
+<status status="PASS" starttime="20190108 22:59:56.104" endtime="20190108 23:00:07.170"></status>
+</kw>
+<kw name="Enter Invalid Username" library="base">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${username}</arg>
+<arg>${Invalidusername}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:07.172" level="INFO">Typing text 'ruhi461' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20190108 23:00:07.171" endtime="20190108 23:00:07.393"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Entered wrong username</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:07.393" endtime="20190108 23:00:07.394"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:07.171" endtime="20190108 23:00:07.394"></status>
+</kw>
+<kw name="Enter Invalid Password" library="base">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${password}</arg>
+<arg>${Invalidpassword}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:07.396" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20190108 23:00:07.395" endtime="20190108 23:00:07.613"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Entered wrong password</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:07.613" endtime="20190108 23:00:07.614"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:07.394" endtime="20190108 23:00:07.614"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:10.615" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190108 23:00:07.614" endtime="20190108 23:00:10.615"></status>
+</kw>
+<kw name="Click on Submit" library="base">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${Submit}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:10.618" level="INFO">Clicking element 'id=u_0_2'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190108 23:00:10.837" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test/Testcases/Result/selenium-screenshot-24.png"&gt;&lt;img src="Test/Testcases/Result/selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190108 23:00:10.648" endtime="20190108 23:00:10.838"></status>
+</kw>
+<msg timestamp="20190108 23:00:10.839" level="FAIL">Element with locator 'id=u_0_2' not found.</msg>
+<status status="FAIL" starttime="20190108 23:00:10.617" endtime="20190108 23:00:10.839"></status>
+</kw>
+<status status="FAIL" starttime="20190108 23:00:10.616" endtime="20190108 23:00:10.840"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190108 23:00:10.840" endtime="20190108 23:00:11.914"></status>
+</kw>
+<doc>This is verify invalid credentials</doc>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="FAIL" critical="yes" starttime="20190108 22:59:56.102" endtime="20190108 23:00:11.914">Element with locator 'id=u_0_2' not found.</status>
+</test>
+<test name="TestCase3:Login_with_valid_credentials" id="s1-t3">
+<kw name="Open facebook website in Chrome and maximize the window" library="base">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${URL}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20190108 23:00:11.922" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20190108 23:00:11.918" endtime="20190108 23:00:22.209"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190108 23:00:22.209" endtime="20190108 23:00:22.322"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Selenium2Library">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>${screenshot_path}</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:22.322" endtime="20190108 23:00:22.323"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Browser is Maximized</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:22.323" endtime="20190108 23:00:22.323"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:11.918" endtime="20190108 23:00:22.324"></status>
+</kw>
+<kw name="Enter valid Username" library="base">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${username}</arg>
+<arg>${validusername}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:22.326" level="INFO">Typing text 'ruhi461@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20190108 23:00:22.326" endtime="20190108 23:00:22.644"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Entered wrong username</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:22.644" endtime="20190108 23:00:22.645"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:22.325" endtime="20190108 23:00:22.645"></status>
+</kw>
+<kw name="Enter valid Password" library="base">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${password}</arg>
+<arg>${validpassword}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:22.646" level="INFO">Typing text 'akankshaverma46' into text field 'xpath=//*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20190108 23:00:22.646" endtime="20190108 23:00:22.959"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Entered wrong password</arg>
+</arguments>
+<status status="PASS" starttime="20190108 23:00:22.959" endtime="20190108 23:00:22.960"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:22.645" endtime="20190108 23:00:22.960"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:25.961" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190108 23:00:22.960" endtime="20190108 23:00:25.961"></status>
+</kw>
+<kw name="Click on Submit" library="base">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=${Submit}</arg>
+</arguments>
+<msg timestamp="20190108 23:00:25.964" level="INFO">Clicking element 'id=u_0_2'.</msg>
+<status status="PASS" starttime="20190108 23:00:25.963" endtime="20190108 23:00:37.806"></status>
+</kw>
+<status status="PASS" starttime="20190108 23:00:25.962" endtime="20190108 23:00:37.807"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>'3s'</arg>
+</arguments>
+<msg timestamp="20190108 23:00:37.809" level="FAIL">ValueError: Invalid time string ''3s''.</msg>
+<status status="FAIL" starttime="20190108 23:00:37.808" endtime="20190108 23:00:37.809"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190108 23:00:37.812" endtime="20190108 23:00:37.889"></status>
+</kw>
+<doc>This is verify valid credentials</doc>
+<tags>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" critical="yes" starttime="20190108 23:00:11.916" endtime="20190108 23:00:37.889">ValueError: Invalid time string ''3s''.</status>
+</test>
+<doc>Testing Facebook Login</doc>
+<status status="FAIL" starttime="20190108 22:59:45.792" endtime="20190108 23:00:37.892"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2">Critical Tests</stat>
+<stat pass="1" fail="2">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="1">Regression</stat>
+<stat pass="1" fail="1">smoke</stat>
+</tag>
+<suite>
+<stat name="My First Robot Script" pass="1" id="s1" fail="2">My First Robot Script</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

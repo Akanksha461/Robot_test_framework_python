@@ -82,7 +82,7 @@ robot my_first_robot_script.robot
 ```
   Note:- Make sure you are in Testcase folder.
     
-   Tags:- Robot framwork gives the feature of tags for more details reffer [Robot Uesr Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#id540). Use tags while execution to run the categorized testcases, below is sample for the same.    
+   **Tags**:- Robot framwork gives the feature of tags for more details reffer [Robot Uesr Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#id540). Use tags while execution to run the categorized testcases, below is sample for the same.    
 ```
 robot -i Regression my_first_robot_script.robot 
 

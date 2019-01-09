@@ -4,7 +4,7 @@
 * Usage
 * Documentation
 * Execution
-* License
+* Result
 
 ## Introduction
 

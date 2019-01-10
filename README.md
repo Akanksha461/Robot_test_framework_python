@@ -18,7 +18,7 @@ Robot Framework is operating system and application independent. The core framew
 
    * Python (Before installing Robot Framework, you need to install Python 2.5 or later)
    * Browser (I prefer Chrome )
-   * Chromedriver (compatible to Your chrome version)
+   * Chromedriver (compatible with your chrome version)
     
   ### Step1:- Install Robot Framework
                 pip install robotframework
@@ -62,17 +62,17 @@ TC_001_Browser_Start_and_Close
     close browser 
 ```
 ## Documentation
-Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). I have implemnted POM as design patter to write my Test script.
+Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). I have implemnted POM as design pattern to write my Test script.
 
   ### Projcet Structure 
       
       
-1. [Requirements.txt](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/requirements.txt)- requirements file defines all the basic requirenments which is used in this project. 
-1. [Keyword](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Keyword)- Keyword folder contains [base.robot](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Keyword)- file which contains all basic common keyword used in Testcases. 
+1. [Requirements.txt](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/requirements.txt)- Requirement file defines all the basic requirenments which are used in this project. 
+1. [Keyword](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Keyword)- Keyword folder contains [base.robot](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Keyword) file which contains all basic common keyword used in testcases. 
 1. [Locators](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/New_robot_framework_project/Test/Locators/locators.py)- Locator file defines all the locators used in project.
-1. [testCases](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Testcases)- From the name itself it is cleared that this file defines all the testcase which is implemented.
-1. [My_first_robot_script](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/New_robot_framework_project/Test/Testcases/my_first_robot_script.robot)- This is the main file by executing this file all the test script will run accordingly.
-1. [Varibale.py](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/New_robot_framework_project/Test/Variable/variable.py)- User file defines all the data of user required in the project. like login etc.
+1. [Testcases](https://github.com/Akanksha461/Robot_test_framework_python/tree/master/New_robot_framework_project/Test/Testcases)- From the name itself it is clear that this file defines all the testcases which are implemented.
+1. [My_first_robot_script](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/New_robot_framework_project/Test/Testcases/my_first_robot_script.robot)- This is the main file. By executing this file all the testcases will run accordingly.
+1. [Varibale.py](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/New_robot_framework_project/Test/Variable/variable.py)- User file defines all the data of user required in the project, like login etc.
 
  ## Execution
   After installations and with all other preconditions in place, you can run this project on the command line by using the robot command:
@@ -82,7 +82,7 @@ robot my_first_robot_script.robot
 ```
   Note:- Make sure you are in Testcase folder.
     
-   **Tags**:- Robot framwork gives the feature of tags for more details reffer [Robot Uesr Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#id540). Use tags while execution to run the categorized testcases, below is sample for the same.    
+   **Tags**:- Robot framework gives the feature of tags. For more details refer [Robot Uesr Guide](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#id540). Use tags while execution to run the categorized testcases, below is a sample for the same.    
 ```
 robot -i Regression my_first_robot_script.robot 
 

@@ -1,10 +1,10 @@
 # Robot_test_framework_python
  * [Introduction](https://github.com/Akanksha461/Robot_test_framework_python/blob/master/README.md#introduction)
-* Installation
-* Usage
-* Documentation
-* Execution
-* Result
+* [Installation](https://github.com/Akanksha461/Robot_test_framework_python#installation)
+* [Usage](https://github.com/Akanksha461/Robot_test_framework_python#usage)
+* [Documentation](https://github.com/Akanksha461/Robot_test_framework_python#documentation)
+* [Execution](https://github.com/Akanksha461/Robot_test_framework_python#execution)
+* [Result](https://github.com/Akanksha461/Robot_test_framework_python#results)
 
 ## Introduction
 

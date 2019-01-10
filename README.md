@@ -15,10 +15,10 @@ Robot Framework is operating system and application independent. The core framew
 ## Installation
 
   ### Preconditions
-  
-    * Python (Before installing Robot Framework, you need to install Python 2.5 or later)
-    * Browser (I prefer Chrome )
-    * Chromedriver (compatible to Your chrome version)
+
+   * Python (Before installing Robot Framework, you need to install Python 2.5 or later)
+   * Browser (I prefer Chrome )
+   * Chromedriver (compatible to Your chrome version)
     
   ### Step1:- Install Robot Framework
                 pip install robotframework
